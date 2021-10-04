@@ -1,0 +1,61 @@
+body {
+    font: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    background: fixed no-repeat linear-gradient(to right, #05f005, #0505f0);
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h3 {
+    font: 900 1em 'Raleway', sans-serif;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-icon {
+    width: 20px;
+    margin-left: 6px;
+}
+
+.copy-icon:hover {
+    cursor: copy;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: none;
+    border-radius: 6px;
+    padding: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
